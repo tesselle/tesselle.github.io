@@ -8,12 +8,14 @@
   _paq.push(["setCookieDomain", "*.tesselle.org"]);
   /* Tell Matomo the website domain so that clicks on these domains are not tracked as 'Outlinks' */
   _paq.push(["setDomains", ["*.tesselle.org"]]);
-  /* Accurately measure the time spent in the visit */
-  _paq.push(['enableHeartBeatTimer']);
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
   /* Enable Download & Outlink tracking */
   _paq.push(['enableLinkTracking']);
+  /* Accurately measure the time spent in the visit */
+  _paq.push(['enableHeartBeatTimer']);
+  /* Require user cookie consent before storing and using any cookies */
+  _paq.push(['requireCookieConsent']);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
   (function() {
     var u="https://analyseweb.huma-num.fr/";
     _paq.push(['setTrackerUrl', u+'matomo.php']);
@@ -23,4 +25,3 @@
   })();
 </script>
 <!-- End Matomo Code -->
-

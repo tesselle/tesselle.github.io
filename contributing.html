@@ -2377,12 +2377,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     _paq.push(["setCookieDomain", "*.tesselle.org"]);
     /* Tell Matomo the website domain so that clicks on these domains are not tracked as 'Outlinks' */
     _paq.push(["setDomains", ["*.tesselle.org"]]);
-    /* Accurately measure the time spent in the visit */
-    _paq.push(['enableHeartBeatTimer']);
-    _paq.push(["setDoNotTrack", true]);
-    _paq.push(['trackPageView']);
     /* Enable Download & Outlink tracking */
     _paq.push(['enableLinkTracking']);
+    /* Accurately measure the time spent in the visit */
+    _paq.push(['enableHeartBeatTimer']);
+    /* Require user cookie consent before storing and using any cookies */
+    _paq.push(['requireCookieConsent']);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(['trackPageView']);
     (function() {
       var u="https://analyseweb.huma-num.fr/";
       _paq.push(['setTrackerUrl', u+'matomo.php']);
@@ -2392,7 +2394,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     })();
   </script>
   <!-- End Matomo Code -->
-  
   
   <!--/radix_placeholder_site_in_header-->
 
@@ -2520,6 +2521,7 @@ Contribute
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
 <p>The tesselle project is supported by the <a href="https://mshs.univ-toulouse.fr/" target="_blank"><abbr title="Centre de Recherche et d'&Eacute;tudes pour l'Art Pr&eacute;historique">CREAP</abbr></a> and the <a href="https://www.iramat-crp2a.cnrs.fr/" target="_blank"><abbr title="Centre de Recherche en Physique Appliqu&eacute;e à l'Arch&eacute;ologie">CRP2A</abbr></a>.</p>
+<p><a href="privacy.html">Privacy Policy</a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
